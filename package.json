@@ -1,0 +1,27 @@
+{
+  "name": "jsonschema-build-failure",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "5.0.2",
+    "@stencil/core": "1.16.2",
+    "@stencil/router": "^1.0.1",
+    "rollup-plugin-node-builtins": "2.1.2",
+    "rollup-plugin-node-polyfills": "0.2.1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "26.0.4",
+    "pouchdb-adapter-idb": "7.2.1",
+    "rxdb": "9.3.0",
+    "rxjs": "6.6.0"
+  }
+}
