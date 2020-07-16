@@ -1,5 +1,4 @@
 import { Config } from '@stencil/core';
-import typescript from '@rollup/plugin-typescript';
 import builtins from 'rollup-plugin-node-builtins';
 import nodePolyfills from 'rollup-plugin-node-polyfills';
 
@@ -18,7 +17,6 @@ export const config: Config = {
     }
   ],
   plugins: [
-    typescript(),
     builtins(),
   ],
   rollupPlugins: {
@@ -30,4 +28,5 @@ export const config: Config = {
     preferBuiltins: true,
     browser: true
   },
+  enableCache: false
 };

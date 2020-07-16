@@ -2,7 +2,7 @@ import pouchdbAdapterIdb from 'pouchdb-adapter-idb';
 import {
   addRxPlugin,
   createRxDatabase
-} from 'rxdb';
+} from 'rxdb/plugins/core';
 import { RxDBAttachmentsPlugin } from 'rxdb/plugins/attachments';
 import { RxDBQueryBuilderPlugin } from 'rxdb/plugins/query-builder'
 import { RxDBReplicationGraphQLPlugin } from 'rxdb/plugins/replication-graphql';
@@ -20,12 +20,10 @@ export class Database {
 
   private static _instance: Database;
 
-  readonly name = `test_project`;
-  protected db;
+  name = `test_project`;
+  db;
 
-  private constructor() {
-
-  }
+  private constructor() {}
 
   async init() {
     this.db = await createRxDatabase({

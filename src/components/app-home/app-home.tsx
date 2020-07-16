@@ -8,8 +8,8 @@ import { Database } from '../../services/db.service';
 })
 export class AppHome {
 
-  componentDidLoad() {
-    Database.instance().init();
+  async componentDidLoad() {
+    await Database.instance().init();
   }
 
   render() {
