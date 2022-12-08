@@ -20,7 +20,7 @@
   "dependencies": {
     "@types/jest": "26.0.4",
     "pouchdb-adapter-idb": "7.2.1",
-    "rxdb": "9.3.0",
+    "rxdb": "13.13.7",
     "rxjs": "6.6.0"
   },
   "peerDependencies": {
